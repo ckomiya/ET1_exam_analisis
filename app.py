@@ -7,10 +7,8 @@ import openai  # Importar el cliente de OpenAI
 import os  # Importar para acceder a las variables de entorno
 
 # Configurar la clave de API de OpenAI desde una variable de entorno
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-
-
+#openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["openai_api_key"]
 
 # Modificar la sección para construir información para las preguntas
 
